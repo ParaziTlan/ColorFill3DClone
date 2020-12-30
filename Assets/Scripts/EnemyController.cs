@@ -59,7 +59,7 @@ public class EnemyController : MonoBehaviour
     }
     IEnumerator CheckAtPoint(Vector2 where)
     {
-        while (Mathf.Abs(transform.position.x - where.x) > 0.005f | Mathf.Abs(transform.position.z - where.y) > 0.005f)
+        while (Mathf.Abs(transform.position.x - where.x) > 0.05f | Mathf.Abs(transform.position.z - where.y) > 0.05f)
             yield return new WaitForEndOfFrame();
 
         MoveNextPatrolPoint();
